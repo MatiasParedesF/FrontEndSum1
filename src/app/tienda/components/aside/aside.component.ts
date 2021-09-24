@@ -4,11 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-aside',
   templateUrl: './aside.component.html',
   styles: [
-    `
-    .contenedorAside{
-
-    }
-    `
   ]
 })
 export class AsideComponent implements OnInit {

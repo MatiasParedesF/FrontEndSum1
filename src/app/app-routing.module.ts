@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { BuscarComponent } from "./tienda/pages/buscar/buscar.component";
+import { CategoriaComponent } from "./tienda/pages/categoria/categoria.component";
 
 import { HomeComponent } from "./tienda/pages/home/home.component";
 import { LoginComponent } from "./tienda/pages/login/login.component";
@@ -27,16 +29,25 @@ const routes:Routes=[
       component:RegistroComponent
   },
   {
+    path:'buscar',
+    component: BuscarComponent
+  },
+  {
+    path:'categoria',
+    component: CategoriaComponent
+  },
+  {
       path:'**',
       redirectTo:''
   }
 ]
 
 @NgModule({
-  exports:[RouterModule],
+  declarations:[],
   imports:[
-      RouterModule.forRoot(routes)
-  ]
+    RouterModule.forRoot(routes)
+],
+  exports:[RouterModule],
 })
 
 export class AppRoutingModule{}

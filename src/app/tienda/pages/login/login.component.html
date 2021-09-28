@@ -2,7 +2,7 @@
     <div class="col-3">
 
     </div>
-    <div class="col-6 margin-t">
+    <form (ngSubmit)="login()" class="col-6 margin-t">
         <div class="card">
             <div class="card-body">
                 <div class="mb-3 row">
@@ -13,18 +13,18 @@
 
                 </div>
                 <div class="mb-3 row">
-                    <label for="contrasena" class="col-sm-2 col-form-label">Contraseña</label>
+                    <label for="clave" class="col-sm-2 col-form-label">Contraseña</label>
                     <div class="col-6">
-                        <input type="password" class="form-control" id="contrasena">
+                        <input type="password" class="form-control" id="clave">
                     </div>
                 </div>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto margin-b">
-                <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                <a href="#" class="btn btn-primary btn-sm">Ingresar</a>
             </div>
 
         </div>
-    </div>
+    </form>
     <div class="col-3">
 
     </div>

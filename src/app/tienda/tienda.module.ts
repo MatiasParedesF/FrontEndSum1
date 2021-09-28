@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
@@ -8,6 +10,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
+import { ConstruccionComponent } from './pages/construccion/construccion.component';
+import { CategoriaComponent } from './pages/categoria/categoria.component';
+
+
 
 
 
@@ -19,7 +26,10 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     AsideComponent,
     ProductosComponent,
-    HomeComponent
+    HomeComponent,
+    BuscarComponent,
+    ConstruccionComponent,
+    CategoriaComponent
   ],
   exports: [
     LoginComponent,
@@ -29,7 +39,9 @@ import { HomeComponent } from './pages/home/home.component';
     AsideComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
+    FormsModule
   ]
 })
 export class TiendaModule { }

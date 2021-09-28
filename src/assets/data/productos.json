@@ -1,0 +1,33 @@
+{
+    "productos": [{
+            "id": 1,
+            "nombre": "conga",
+            "descripcion": "Color madera",
+            "precio": 320200
+        },
+        {
+            "id": 2,
+            "nombre": "tumba",
+            "descripcion": "Color madera",
+            "precio": 315200
+        },
+        {
+            "id": 3,
+            "nombre": "tumba",
+            "descripcion": null,
+            "precio": null
+        },
+        {
+            "id": 4,
+            "nombre": "conga",
+            "descripcion": null,
+            "precio": null
+        },
+        {
+            "id": 5,
+            "nombre": "quinto",
+            "descripcion": "Serie Luis Conte",
+            "precio": 305200
+        }
+    ]
+}

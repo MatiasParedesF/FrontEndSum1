@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TiendaModule } from './tienda/tienda.module'
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TiendaModule } from './tienda/tienda.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
     TiendaModule,
     HttpClientModule,
 

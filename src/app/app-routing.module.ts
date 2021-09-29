@@ -1,13 +1,17 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+
+
+import { LoginComponent } from "./auth/pages/login/login.component";
+import { RegistroComponent } from "./auth/pages/registro/registro.component";
+
+
 import { BuscarComponent } from "./tienda/pages/buscar/buscar.component";
+import { HomeComponent } from "./tienda/pages/home/home.component";
+
 import { CarritoComponent } from "./tienda/pages/carrito/carrito.component";
 import { CategoriaComponent } from "./tienda/pages/categoria/categoria.component";
-
-import { HomeComponent } from "./tienda/pages/home/home.component";
-import { LoginComponent } from "./tienda/pages/login/login.component";
 import { ProductosComponent } from "./tienda/pages/productos/productos.component";
-import { RegistroComponent } from "./tienda/pages/registro/registro.component";
 import { VerProductoComponent } from "./tienda/pages/ver-producto/ver-producto.component";
 
 
@@ -32,7 +36,7 @@ const routes:Routes=[
 },
   {
       path:'registro',
-      component:RegistroComponent
+      component: RegistroComponent
   },
   {
     path:'buscar',

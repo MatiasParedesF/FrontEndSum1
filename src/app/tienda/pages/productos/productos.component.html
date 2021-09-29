@@ -1,5 +1,9 @@
 <div class="container">
     <div class="row">
+        <button type="button" class="btn btn-danger align-self-end col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Ver Carrito
+    </button>
+        <app-modal [Carrito]="carrito"></app-modal>
         <div class="col" *ngFor="let producto of productos.productos as productos">
             <div class="card" style="width: 18rem; margin-top: 10px;margin-bottom: 10px">
                 <img src="assets/img/instrumentos/{{producto.img}}" class="card-img-top" alt="...">
@@ -21,31 +25,7 @@
                 </div>
             </div>
         </div>
-        {{carrito}}
-        <div class="row" *ngIf="carrito.length > 0">
-            <div class="col-6" style="position: fixed; right: 0;bottom: 0; background:rgba(0, 0, 0, 0.9); ">
-                <table class="table" style="color:#FFFFFF">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Producto</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody *ngFor="let producto of carrito; let i=index">
-                        <tr>
-                            <th scope="row">{{i+1}}</th>
-                            <td>{{producto.nombre}}</td>
-                            <td>{{producto.cantidad}}</td>
-                            <td>{{producto.precio | currency:'':'symbol':'1.0-0'}}</td>
-                        </tr>
-                    </tbody>
-                </table>
 
-            </div>
-
-        </div>
 
 
     </div>

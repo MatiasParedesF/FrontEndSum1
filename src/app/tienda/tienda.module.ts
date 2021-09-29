@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 
-import { LoginComponent } from './pages/login/login.component';
-import { RegistroComponent } from './pages/registro/registro.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AsideComponent } from './components/aside/aside.component';
@@ -15,6 +14,7 @@ import { ConstruccionComponent } from './pages/construccion/construccion.compone
 import { CategoriaComponent } from './pages/categoria/categoria.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { VerProductoComponent } from './pages/ver-producto/ver-producto.component';
+import { ModalComponent } from './pages/modal/modal.component';
 
 
 
@@ -22,8 +22,6 @@ import { VerProductoComponent } from './pages/ver-producto/ver-producto.componen
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    RegistroComponent,
     HeaderComponent,
     FooterComponent,
     AsideComponent,
@@ -33,11 +31,10 @@ import { VerProductoComponent } from './pages/ver-producto/ver-producto.componen
     ConstruccionComponent,
     CategoriaComponent,
     CarritoComponent,
-    VerProductoComponent
+    VerProductoComponent,
+    ModalComponent
   ],
   exports: [
-    LoginComponent,
-    RegistroComponent,
     HeaderComponent,
     FooterComponent,
     AsideComponent

@@ -11,7 +11,7 @@ import { ProductoCarrito } from '../../interfaces/carrito.interface';
 })
 
 export class ProductosComponent implements OnInit {
-  
+ 
   productos!: ListaProducto;
   carrito:ProductoCarrito[]=[];
   _productoCarrito!:ProductoCarrito;

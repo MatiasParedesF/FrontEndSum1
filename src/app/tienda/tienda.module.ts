@@ -13,6 +13,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { ConstruccionComponent } from './pages/construccion/construccion.component';
 import { CategoriaComponent } from './pages/categoria/categoria.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
+import { VerProductoComponent } from './pages/ver-producto/ver-producto.component';
 
 
 
@@ -29,7 +31,9 @@ import { CategoriaComponent } from './pages/categoria/categoria.component';
     HomeComponent,
     BuscarComponent,
     ConstruccionComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    CarritoComponent,
+    VerProductoComponent
   ],
   exports: [
     LoginComponent,

@@ -1,33 +1,93 @@
 {
     "productos": [{
             "id": 1,
-            "nombre": "conga",
+            "nombre": "Conga",
+            "descrip_xs": "",
             "descripcion": "Color madera",
-            "precio": 320200
+            "precio": 320200,
+            "stock": 15,
+            "img": "conga.jfif"
         },
         {
             "id": 2,
-            "nombre": "tumba",
+            "nombre": "Tumba",
+            "descrip_xs": "",
             "descripcion": "Color madera",
-            "precio": 315200
+            "precio": 315200,
+            "stock": 10,
+            "img": "tumba.jfif"
         },
         {
             "id": 3,
-            "nombre": "tumba",
-            "descripcion": null,
-            "precio": null
+            "nombre": "Tumba",
+            "descrip_xs": "",
+            "descripcion": 0,
+            "precio": 0,
+            "stock": 0,
+            "img": "tumba.jfif"
         },
         {
             "id": 4,
-            "nombre": "conga",
-            "descripcion": null,
-            "precio": null
+            "nombre": "Conga",
+            "descrip_xs": "",
+            "descripcion": 0,
+            "precio": 0,
+            "stock": 0,
+            "img": "conga.jfif"
         },
         {
             "id": 5,
-            "nombre": "quinto",
+            "nombre": "Quinto",
+            "descrip_xs": "",
             "descripcion": "Serie Luis Conte",
-            "precio": 305200
+            "precio": 305200,
+            "stock": 10,
+            "img": "quinto.jfif"
+        },
+        {
+            "id": 6,
+            "nombre": "Bateria Pad",
+            "descrip_xs": "",
+            "descripcion": "Serie Luis Conte",
+            "precio": 305200,
+            "stock": 10,
+            "img": "bateria-pad.jfif"
+        },
+        {
+            "id": 7,
+            "nombre": "Bateria",
+            "descrip_xs": "",
+            "descripcion": "Serie Luis Conte",
+            "precio": 305200,
+            "stock": 10,
+            "img": "bateria.jfif"
+        },
+        {
+            "id": 8,
+            "nombre": "Tambor",
+            "descrip_xs": "",
+            "descripcion": "Serie Luis Conte",
+            "precio": 305200,
+            "stock": 10,
+            "img": "tambor.jfif"
+        },
+        {
+            "id": 9,
+            "nombre": "Bongo Luis Conte",
+            "descrip_xs": "",
+            "descripcion": "Serie Luis Conte",
+            "precio": 305200,
+            "stock": 10,
+            "img": "bongo-Luis.jfif"
+        },
+        {
+            "id": 10,
+            "nombre": "Bongo Diego Gale",
+            "descrip_xs": "",
+            "descripcion": "Serie Diego Gale",
+            "precio": 305200,
+            "stock": 10,
+            "img": "bongo-Diego.jfif"
         }
     ]
 }

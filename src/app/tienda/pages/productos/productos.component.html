@@ -1,16 +1,52 @@
 <div class="container">
     <div class="row">
-        <div class="col" *ngFor="let producto of productos.productos">
+        <div class="col" *ngFor="let producto of productos.productos as productos">
             <div class="card" style="width: 18rem; margin-top: 10px;margin-bottom: 10px">
-                <img src="assets/img/instrumentos/{{producto.nombre+'.jfif'}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{producto.nombre ? producto.nombre : "Sin nombre"}}</h5>
-                    <p class="card-text">{{producto.descripcion ? producto.descripcion : "Sin descripcion"}}</p>
-                    <a href="#" class="btn btn-primary">{{(producto.precio ? producto.precio : 0 )| currency }}</a>
+                <img src="assets/img/instrumentos/{{producto.img}}" class="card-img-top" alt="...">
+                <div class="card-body row">
+                    <div class="col-6">
+
+                        <h5 class="card-title">{{producto.nombre ? producto.nombre : "Sin nombre"}}</h5>
+
+                        <p class="card-text">{{producto.descripcion ? producto.descripcion : "Sin descripcion"}}</p>
+
+                        <h5>{{producto.precio | currency:'CLP':'symbol':'1.0-0'}}</h5>
+                    </div>
+                    <div class="col-6" *ngIf="producto.stock else productoSinStock">
+                        <p class="card-text">Stock: {{producto.stock ? producto.stock : "Sin Stock"}}</p>
+                        <a class="btn btn-warning" (click)="agregarProductoCarrito(producto)">Agregar</a>
+                    </div>
+                    <ng-template class="col-6" #productoSinStock>Sin stock</ng-template>
+                    <a class="btn btn-primary" [routerLink]="['/producto', producto.id]">Ver producto</a>
                 </div>
+            </div>
+        </div>
+        {{carrito}}
+        <div class="row" *ngIf="carrito.length > 0">
+            <div class="col-6" style="position: fixed; right: 0;bottom: 0; background:rgba(0, 0, 0, 0.9); ">
+                <table class="table" style="color:#FFFFFF">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let producto of carrito; let i=index">
+                        <tr>
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{producto.nombre}}</td>
+                            <td>{{producto.cantidad}}</td>
+                            <td>{{producto.precio | currency:'':'symbol':'1.0-0'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
 
         </div>
+
 
     </div>
 

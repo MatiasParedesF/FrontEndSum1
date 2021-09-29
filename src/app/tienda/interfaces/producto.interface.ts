@@ -4,7 +4,12 @@ export interface ListaProducto {
 
 export interface Producto {
     id: number;
-    nombre?: string;
-    descripcion?: string;
-    precio?: number;
+    nombre: string;
+    descrip_xs:string;
+    descripcion: string;
+    precio: number;
+    stock: number;
+    img:string;
+
 }
+
